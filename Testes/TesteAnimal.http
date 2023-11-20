@@ -1,0 +1,32 @@
+@base_url = https://localhost:7024/api
+
+# ANIMAL ######################################
+
+### Criação de um novo animal
+POST {{base_url}}/animal/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Gato",
+    "descricao" : "Malhado"
+}
+
+### Obtenção de todos os animais
+GET {{base_url}}/animal/encontrar
+
+# Buscar um animal por id
+### 
+GET {{base_url}}/animal/buscar/7
+
+# Deletar um animal por id
+###
+DELETE {{base_url}}/animal/deletar/6
+
+# Atualizar um animal por id
+###
+PUT {{base_url}}/animal/atualizar/3
+Content-Type: application/json
+{
+    "nome": "Porco",
+    "descricao": "Balofinho"
+}

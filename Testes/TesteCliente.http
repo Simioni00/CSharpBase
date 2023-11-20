@@ -1,0 +1,31 @@
+@base_url = https://localhost:7024/api
+# Criação de um novo cliente
+###
+POST {{base_url}}/cliente/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Gordao"
+}
+
+# Obtenção de todos os clientes
+###
+GET {{base_url}}/cliente/buscar
+
+# Buscar um cliente por id
+###
+GET {{base_url}}/cliente/encontrar/1
+
+# Deletar um cliente por id
+###
+DELETE {{base_url}}/cliente/deletar/3
+
+# Atualizar um cliente por id
+###
+PUT {{base_url}}/cliente/atualizar/4
+Content-Type: application/json
+
+
+{
+    "nome": "Teste"
+}
