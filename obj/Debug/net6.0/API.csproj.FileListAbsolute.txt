@@ -61,3 +61,8 @@ C:\Users\User\Desktop\Base\API\obj\Debug\net6.0\refint\API.dll
 C:\Users\User\Desktop\Base\API\obj\Debug\net6.0\API.pdb
 C:\Users\User\Desktop\Base\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\User\Desktop\Base\API\obj\Debug\net6.0\ref\API.dll
+C:\Users\User\Desktop\Base\API\bin\Debug\net6.0\FRONT\angular.json
+C:\Users\User\Desktop\Base\API\bin\Debug\net6.0\FRONT\package-lock.json
+C:\Users\User\Desktop\Base\API\bin\Debug\net6.0\FRONT\package.json
+C:\Users\User\Desktop\Base\API\bin\Debug\net6.0\FRONT\tsconfig.app.json
+C:\Users\User\Desktop\Base\API\bin\Debug\net6.0\FRONT\tsconfig.json

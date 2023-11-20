@@ -30,6 +30,11 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.UseCors
+(
+    c => c.AllowAnyOrigin().AllowAnyMethod().AllowAnyMethod()
+);
+
 app.MapControllers();
 
 app.Run();
