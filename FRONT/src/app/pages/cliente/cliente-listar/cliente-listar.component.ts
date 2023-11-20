@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Cliente } from '../../../models/cliente.models';
 
-
-
 @Component({
   selector: 'app-cliente-listar',
   templateUrl: './cliente-listar.component.html',
