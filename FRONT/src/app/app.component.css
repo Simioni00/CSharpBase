@@ -1,13 +1,37 @@
+/*
 .menu{
     background-color: transparent;
     color: white;
     border: none;
 }
 
-.container{
+*/
+.menu-item {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    background-color: #3f51b5;
+  }
+  
+  .menu-item:hover {
+    background-color: #303f9f;
+  }
+  
+  .submenu {
+    display: none;
+    background-color: #5c6bc0;
+  }
+  
+  .menu-item:hover .submenu {
+    display: block;
+  }
+  /*
+  .container{
     height: calc(100% - 64px);
+}*/
+.container{
+    height: 100%;
 }
-
 .item{
     display: flex;
     align-items: center;
@@ -16,3 +40,5 @@
 .icon{
     margin-right: 8px;
 }
+
+  

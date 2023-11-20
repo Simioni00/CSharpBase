@@ -1,1 +1,25 @@
-<p>animal-atualizar works!</p>
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Atualizar Animal</mat-card-title>
+      <mat-card-subtitle> </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field class="input" id="id">
+        <mat-label>ID</mat-label>
+        <input placeholder="Ex. 1" matInput type="number" [(ngModel)]="animal.animalId" />
+      </mat-form-field>
+      <mat-form-field class="input" id="nome">
+        <mat-label>Nome</mat-label>
+        <input placeholder="Ex. Dog" matInput [(ngModel)]="animal.nome" />
+      </mat-form-field>
+      <mat-form-field class="input" id="descricao">
+        <mat-label>Descrição</mat-label>
+        <input placeholder="Ex. Cachorro da raça Labrador" matInput [(ngModel)]="animal.descricao" />
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button color="warn" mat-stroked-button (click)="atualizarAnimal()">
+        Atualizar
+      </button>
+    </mat-card-actions>
+  </mat-card>

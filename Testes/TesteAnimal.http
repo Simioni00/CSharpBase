@@ -16,16 +16,18 @@ GET {{base_url}}/animal/encontrar
 
 # Buscar um animal por id
 ### 
-GET {{base_url}}/animal/buscar/7
+GET {{base_url}}/animal/buscar/2
 
 # Deletar um animal por id
 ###
-DELETE {{base_url}}/animal/deletar/6
+DELETE {{base_url}}/animal/deletar/2
 
 # Atualizar um animal por id
 ###
 PUT {{base_url}}/animal/atualizar/3
 Content-Type: application/json
+
+
 {
     "nome": "Porco",
     "descricao": "Balofinho"

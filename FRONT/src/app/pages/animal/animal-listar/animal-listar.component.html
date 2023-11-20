@@ -1,1 +1,5 @@
-<p>animal-listar works!</p>
+<ul *ngFor="let a of animais">
+    <li>
+        ID: {{ a.animalId }} - Nome: {{ a.nome }} - Descricao: {{ a.descricao}}
+    </li>
+</ul>
