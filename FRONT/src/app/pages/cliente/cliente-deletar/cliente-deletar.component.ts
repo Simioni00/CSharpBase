@@ -11,6 +11,7 @@ import { Cliente } from '../../../models/cliente.models';
 })
 export class ClienteDeletarComponent implements OnInit {
   id!: number;
+  nome!: string;
   clientes: Cliente[] = [];
 
   constructor(
@@ -32,7 +33,7 @@ export class ClienteDeletarComponent implements OnInit {
       });
   }
 
-  deletar(): void {
+  deletarPorId(): void {
     this.http
       .delete("https://localhost:7024/api/cliente/deletar/" + this.id)
       .subscribe({
@@ -52,5 +53,25 @@ export class ClienteDeletarComponent implements OnInit {
         },
       });
   }
-}
 
+  deletarPorNome(): void {
+    this.http
+      .delete("https://localhost:7024/api/cliente/deletarPorNome/" + this.nome)
+      .subscribe({
+        next: () => {
+          this._snackBar.open("Cliente deletado!", "Ok!", {
+            horizontalPosition: "right",
+            verticalPosition: "top",
+          });
+          this.router.navigate(["pages/cliente/buscar"]);
+        },
+        error: (error) => {
+          console.error("Erro ao deletar cliente:", error);
+          this._snackBar.open("Erro ao deletar cliente.", "Ok!", {
+            horizontalPosition: "right",
+            verticalPosition: "top",
+          });
+        },
+      });
+  }
+}

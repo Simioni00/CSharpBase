@@ -94,5 +94,20 @@ namespace API.Controllers
 
             return Ok();
         }
+        [HttpDelete]
+        [Route("deletarPorNome/{nome}")]
+        public IActionResult DeletarPorNome(string nome)
+        {
+            var cliente = _context.Clientes.FirstOrDefault(c => c.Nome == nome);
+            if (cliente == null)
+            {
+                return NotFound();
+            }
+
+        _context.Clientes.Remove(cliente);
+        _context.SaveChanges();
+
+            return Ok();
+        }
     }
 }
