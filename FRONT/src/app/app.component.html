@@ -2,7 +2,7 @@
     <button class="menu" mat-icon-button (click)="sidenav.toggle()">
       <mat-icon> menu </mat-icon>
     </button>
-    <span>Teste</span>
+    <span>Menu</span>
   </mat-toolbar>
   <mat-sidenav-container class="container">
     <mat-sidenav #sidenav [opened]="true" mode="side">
@@ -17,6 +17,12 @@
           <div class="item">
             <mat-icon class="icon"> list </mat-icon>
             <span> Listar Clientes </span>
+          </div>
+        </a>
+        <a mat-list-item routerLink="/pages/cliente/cliente-atualizar">
+          <div class="item">
+            <mat-icon class="icon"> update </mat-icon>
+            <span> Alterar Cliente </span>
           </div>
         </a>
         <a mat-list-item routerLink="/pages/cliente/cliente-deletar">
